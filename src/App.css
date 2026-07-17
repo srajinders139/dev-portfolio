@@ -11,7 +11,7 @@
 :root {
     --bg: #f9f8f6;
     --text: #1a1a1a;
-    --muted: #888;
+    --muted: #1c1b1b;
     --accent: #e8624a;
     --card: #fff;
     --border: #ebebeb;
@@ -66,9 +66,9 @@ body {
     }
 }
 
-.float {
+/* .float {
     animation: float 3s ease-in-out infinite;
-}
+} */
 
 .fadeUp {
     animation: fadeUp 0.6s ease both;
@@ -114,6 +114,13 @@ body {
     width: 130px;
     height: 130px;
     margin-bottom: 0.8rem;
+}
+
+.char-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    object-fit: cover;
 }
 
 .char-name {
@@ -224,8 +231,8 @@ section:last-child {
 }
 
 h1 {
-    font-size: clamp(2.8rem, 5vw, 4.2rem);
-    font-weight: 700;
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
+    font-weight: 300;
     line-height: 1.08;
     letter-spacing: -.03em;
     margin-bottom: 1.2rem;
@@ -240,7 +247,7 @@ h1 em {
     font-size: 1.05rem;
     color: var(--muted);
     line-height: 1.7;
-    max-width: 480px;
+    max-width: fit-content;
 }
 
 .cta-row {
@@ -258,6 +265,7 @@ h1 em {
     border: none;
     transition: all .2s;
     font-family: 'Sora', sans-serif;
+    width: fit-content;
 }
 
 .btn-primary {
@@ -414,6 +422,7 @@ h1 em {
     gap: .5rem;
     font-size: .82rem;
     font-weight: 500;
+    color: black;
 }
 
 .skill-dot {
